@@ -1,0 +1,69 @@
+# Window Customization
+window:
+  dimensions:
+    columns: 140
+    lines: 40
+  padding:
+    x: 15
+    y: 35
+  decorations: full #Still won't show in a window manger, but will in a desktop environment
+  scrolling:
+    history: 10000
+    multiplier: 3
+  opacity: 0.9
+  startup_mode: Windowed
+window.dynamic_title: true
+
+# Font Customization
+font:
+  normal:
+    family: "MesloLGS NF"
+  size: 14
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: false
+  debug:
+    persistent_logging: false
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # Default colors
+  primary:
+    background: '#2E3440'
+    foreground: '#D8DEE9'
+
+  # Normal colors
+  normal:
+    black: '#3B4252'
+    red: '#BF616A'
+    green: '#A3BE8C'
+    yellow: '#EBCB8B'
+    blue: '#81A1C1'
+    magenta: '#B48EAD'
+    cyan: '#88C0D0'
+    white: '#E5E9F0'
+
+  # Bright colors
+  bright:
+    black: '#4C566A'
+    red: '#BF616A'
+    green: '#A3BE8C'
+    yellow: '#EBCB8B'
+    blue: '#81A1C1'
+    magenta: '#B48EAD'
+    cyan: '#8FBCBB'
+    white: '#ECEFF4'
+
+cursor:
+  style:
+    shape: Beam
+    blinking: off
+    blink-interval: 750
+    unfocused_hollow: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
